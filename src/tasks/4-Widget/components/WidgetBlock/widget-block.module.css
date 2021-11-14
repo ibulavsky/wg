@@ -1,0 +1,58 @@
+.block {
+    width: 90%;
+    height: 500px;
+    font-size: 12px;
+    margin-top: 20px;
+    background-color: #414141;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+.close {
+    background: none;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+
+    border: 1px solid white;
+
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.search {
+    outline: none;
+}
+
+.filter {
+    outline: none;
+}
+
+.selectedElements {
+    color: white;
+    margin: 5px 10px;
+}
+
+.controls {
+    display: flex;
+    margin: 0 10px 10px 10px;
+}
+
+.controls button {
+    margin-right: 10px;
+}

@@ -1,0 +1,21 @@
+.elements {
+    display: flex;
+}
+
+.element {
+    width: 120px;
+    margin: 10px 10px 10px 0;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
+    color: white;
+    background-color: #065ddc;
+}
+
+.element button {
+    cursor: pointer;
+}

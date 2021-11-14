@@ -1,0 +1,115 @@
+.listWrapper {
+    width: 100%;
+    height: 100px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.selected {
+    display: none;
+    color: #707275;
+    line-height: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.04);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(200, 200, 200, 0.85);
+    width: 150px;
+    height: 32px;
+}
+
+.selected span::before {
+    content: url("../../assets/img/burger-menu.png");
+    padding-right: 8px;
+}
+
+.mobileList {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.04);
+    background-color: rgb(235, 235, 234);
+    border: 1px solid rgba(200, 200, 200, 0.85);
+    width: 140px;
+}
+
+.list ul, .mobileList ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.list li, .mobileList li {
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px 8px;
+    display: block;
+    color: #707275;
+}
+
+.mobileList li {
+    padding: 5px;
+}
+
+.active {
+    background-color: #707275;
+    border-radius: 5px;
+}
+
+.active div {
+    color: #eff0f1;
+}
+
+@media all and (max-width: 800px) {
+    .selected {
+        display: block;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .mobileList {
+        display: block;
+    }
+
+    .active {
+        background: none;
+        border-radius: 5px;
+    }
+
+    .active ::before {
+        content: "→";
+        margin-left: -20px;
+        margin-right: 7px;
+    }
+
+    .active div {
+        color: #000;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .selected {
+
+    }
+
+    .list {
+        display: flex;
+    }
+
+    .list li {
+        margin: 10px;
+    }
+}
+
+.none {
+    display: none;
+}

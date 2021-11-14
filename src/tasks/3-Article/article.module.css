@@ -1,0 +1,96 @@
+.article {
+    padding: 0 50px;
+    font: 14px/18px "Arial";
+    color: #707275;
+}
+
+.h2 {
+    text-align: left;
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(112, 114, 117);
+
+    /*column-span: all;*/
+}
+
+.content {
+    column-count: 1;
+    column-gap: 40px;
+    column-rule: 1px solid #a2a3a3;
+}
+
+.infoStart {
+    text-indent: 16px;
+    margin: 0 0 20px;
+}
+
+.infoCenter {
+    text-indent: 16px;
+    margin: 20px 0;
+}
+
+.rulesList {
+    list-style: none;
+    counter-reset: item;
+    padding: 0;
+}
+
+.rule {
+    counter-increment: item;
+    margin: 3px 0;
+}
+
+.rule::before {
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+    width: 18px;
+    content: counter(item)".";
+    color: #4d4e53;
+}
+
+.h4 {
+    display: inline-block;
+    margin: 2px 0;
+    font-weight: 200;
+    color: #4d4e53;
+}
+
+.ruleContent {
+    padding: 0 0 0 18px;
+    margin: 0;
+}
+
+.subList {
+    list-style: none;
+    padding: 0;
+}
+
+.subRule {
+    margin: 0;
+}
+
+.subRule::before {
+    content: "-";
+    padding-right: 3px;
+}
+
+@media (min-width: 800px) {
+    .content {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 2048px) {
+    .content {
+        column-count: 4;
+    }
+}

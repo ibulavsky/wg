@@ -1,0 +1,119 @@
+.form {
+    height: 38px;
+    width: 500px;
+    margin: 10px auto;
+}
+
+.container {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 38px;
+    padding: 0 38px;
+
+    border: solid 1px #EFEFEF;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 0 #0000001C, inset 0 2px 6px 0 #0000007C;
+
+    box-sizing: border-box;
+
+    /*text*/
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: #373f45;
+    font-family: "Arial", serif;
+}
+
+.input:focus {
+    background-image: none;
+    outline: none;
+    border-color: #FFFFFFFF;
+    box-shadow: 0 2px 0 0 #0000001C, inset 0 2px 6px 0 #000000AF;
+}
+
+.input:valid + .resetIcon {
+    display: block;
+}
+
+.searchIcon, .resetIcon {
+    position: absolute;
+}
+
+.searchIcon {
+    margin: 11px;
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/img/search.png");
+    z-index: 1;
+}
+
+.resetIcon {
+    display: none;
+    margin: 10px;
+    width: 17px;
+    height: 18px;
+    background: url("../../assets/img/delete.png");
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border-width: 0;
+}
+
+.submit {
+    /*width: ;*/
+    margin-left: 7px;
+    padding: 0 18px;
+    height: 38px;
+    white-space: pre;
+
+    border-radius: 3px;
+    border: 1px solid #FFFFFFFF;
+
+    background: #e5e5e5 linear-gradient(to top, rgb(177, 181, 183, 0.25) 0%, rgb(177, 181, 183, 0) 100%);
+    box-shadow: 0 1px 2px 0 #00000070;
+
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #373f45;
+    font-weight: bold;
+    font-family: "Arial Narrow", sans-serif;
+}
+
+.submit:hover {
+    background: #f7f7f7 linear-gradient(to top, rgb(177, 181, 183, 0.25) 0%, rgba(177, 181, 183, 0) 100%);
+}
+
+
+.form-flex {
+    display: flex;
+}
+
+.container-flex {
+    width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+}
+
+.form-table {
+    display: table;
+}
+
+.container-table {
+    width: 100%;
+    height: 38px;
+    display: table-cell
+}
+
+.submit-table {
+    display: table-cell;
+    padding-top: 2px; /*box-sizing*/
+}
